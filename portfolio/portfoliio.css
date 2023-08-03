@@ -1,0 +1,567 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:cursive;
+}
+
+#header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+    background: transparent;
+    display: flex;
+    padding: 20px 30px ;
+    
+}
+
+.logo{
+position: relative;
+font-size: 20px;
+text-decoration: none;
+animation: sildelogo 1s ease forwards;
+
+
+}
+
+.logo:hover{
+    transform: scale(1.5);
+}
+
+.navbar a{
+    display: inline;
+    justify-content: space-between;
+    margin-right: 100px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    animation: sildenav 1s ease forwards;
+    
+}
+.navbar a:hover{
+       color:blue;
+}
+
+
+.home{
+    display: flex;
+    background-image: url(navbar.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 109vh;
+    background-repeat: no-repeat;
+    padding: 220px 210px;
+}
+.home-content h1{
+    display: flex;
+    position: relative;
+    right: 170px;
+    animation: sildeshow  1s ease forwards;
+    animation-delay: 0s;
+    
+}
+.home-content p{
+    display: flex;
+    position: relative;
+    right: 670px;
+    padding: 0px 0px 0px 500px;
+    animation: slidepara 1s ease forwards;
+    
+}
+.home img{
+    width:50%;
+    height: 620px;
+    display: flex;
+    left: 600px;
+    bottom: 400px;
+    position: relative;
+    animation: slidelmg 1s ease forwards;
+}
+.home img:hover{
+    transform: scale(1.2);
+}
+.home .btn-box  {
+    display: inline-flex;
+    position: relative;
+    width:20%;
+    height:10%;
+    border: 2px soild aqua;
+    border-radius: 25%;
+    color: aliceblue;
+    text-decoration: none;
+    margin: 30px 500px 0px px ;
+    animation: slidetop 1s ease forwards;
+    
+
+}
+.home .btn-box:hover  {
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan,0 0 50px cyan,0 0 100px cyan, 0 0 200px cyan;
+    background-color: cyan;
+    
+
+}
+.home-content a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 5px 5px 5px;
+    width:40px;
+    height: 40px;
+    font-size: 20px;
+    border: 2px solid aqua;
+    border-radius: 50%;
+    color:white;
+    text-decoration: none;
+    margin: 30px 10px 20px 0px;
+    animation: sildecone 1s ease backwards;
+    
+
+    
+}
+.home-content a:hover{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan,0 0 50px cyan,0 0 100px cyan,0 0 200px cyan;
+   background-color: cyan;
+}
+
+@keyframes sildeshow {
+    0%{
+        transform: translate(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slidetop 
+{
+    0%{
+        transform: translatey(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatey(0px);
+        opacity: 1;
+    }
+    
+}
+@keyframes sildecone 
+{   
+    0%{
+        transform: translatex(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatex(0px);
+        opacity: 1;
+}
+
+}
+
+@keyframes slidepara
+{   
+    0%{
+        transform: translate(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+}
+
+}
+
+@keyframes sildelogo
+{   
+    0%{
+        transform: translate(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+}
+
+}
+
+@keyframes sildenav 
+{   
+    0%{
+        transform: translate(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+}
+
+}
+
+@keyframes slidelmg
+{   
+    0%{
+        transform: translate(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+}
+
+}
+#aboutme {
+    background-image: url(about.jpg);
+    width: 100%;
+    height: 109vh;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-img img{
+    float: right;
+    position: relative;
+    padding: 200px 0px 0px 0px;
+    margin-right: 150px;
+    animation: slideimm 1s ease forwards;
+    
+
+}
+.text-about h2{
+    font-size: 30px;
+    padding: 220px 100px 0px 0px;
+    margin-left: 100px;
+    animation: slideright 1s ease forwards;
+}
+.text-about p{
+display: flex;
+position: relative;
+right: 500px;
+padding: 40px 0px 0px 300px;
+font-size: 20px;
+margin-left: 300px;
+
+}
+
+.btn-about{
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width:20%;
+    height:10%;
+    border: 2px soild  green;
+    border: 2px solid burlywood;
+    border-radius: 25%;
+    color:black;
+    text-decoration: none;
+    margin: 50px 200px 0px 100px ;
+    animation: slidebottom 1s ease forwards;
+    
+
+}
+.btn-about:hover{
+    background-color: burlywood;
+    box-shadow: 0 0 5px burlywood,0 0 25px burlywood,0 0 50px burlywood,0 0 100px burlywood,0 0 200px burlywood;
+}
+
+@keyframes slidebottom
+{
+    0%{
+        transform: translatey(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatey(0px);
+        opacity: 1;
+    }
+    
+}
+@keyframes slideright
+{
+    0%{
+        transform: translatex(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatex(0px);
+        opacity: 1;
+    }
+    
+}
+@keyframes slideimm
+{
+    0%{
+        transform: translatey(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatey(0px);
+        opacity: 1;
+    }
+    
+}
+span{
+    color:chocolate;
+}
+
+ .h3-pa{
+    position: relative;
+    font-size: 30px;
+    
+    padding: 10px 100px 0px 0px;
+    
+}
+.skills-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+}
+.skills-list div{
+    background-color: aliceblue;
+    padding: 40px;
+    font-size: 13px;
+    border-right: 10px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px cyan,1px 1px 40px cyan  ;
+    animation: slidelis 1s ease forwards;
+
+}
+.skills-list img:hover{
+    transform:scale(1.5);
+}
+
+.skills-list div a{
+    display: flex;
+    position: relative;
+    font-size: 20px;
+
+}
+.read{
+
+    display: inline-block;
+    padding: 12px 20px;
+    background: cyan;
+    border: 2px solid blueviolet;
+    border-radius: 40px;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 30px 10px 10px 10px;
+     animation: sliderea 1s ease forwards;
+}
+.read:hover{
+   background-color:blueviolet;
+}
+
+#contactme {
+    background-image: url(contact.png);
+    background-size: cover;
+    width: 100%;
+    height: 120vh;
+    background-repeat: no-repeat;
+       
+        padding: 30px;
+        margin-top: 130px;
+    
+    
+}
+
+.input-list input{
+    float: right;
+    margin: 60px 100px 100px 100px;
+    justify-content: center;
+     align-items: center;
+    border: none;
+    outline: none;
+    width: 40%;
+    padding: 10px;
+    background-color: gray;
+    color: black;
+    font-size: 1rem;
+    margin-bottom:0.5rem ;
+    border-radius: 0.5rem;
+    animation: sildein 1s ease forwards;
+}
+
+.input-list textarea{
+    float: right;
+    margin: 60px 100px 100px 100px;
+    justify-content: center;
+     align-items: center;
+    border: none;
+    outline: none;
+    width: 40%;
+    padding: 5px;
+    background-color: gray;
+    color: black;
+    font-size: 1rem;
+    margin-bottom:0.5rem ;
+    border-radius: 0.5rem;
+    animation: slidetext 1s ease forwards;
+}
+.input-list .btn-box{
+    margin: 100px 0px 0px 850px;
+    border:2px solid cyan;
+    border-radius: 25%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 4px 20px 20px 20px;
+    animation: slidebox 1s ease forwards;
+} 
+#contactme h5{
+    top: 200px;
+    font-size: 1.8rem;
+    justify-content: center;
+    align-items: center;
+  animation: slidelef 1s ease forwards;
+    
+
+}
+.input-list .btn-box:hover{
+     background-color: blue;
+    box-shadow: 0 0 5px blue,0 0 25px blue,0 0 50px blue,0 0 100px blue;
+}
+@keyframes slidelef
+{
+    0%{
+        transform: translatey(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatey(0px);
+        opacity: 1;
+    }
+    
+}
+
+#contactme a{
+    justify-content: space-between;
+    color: black;
+    align-items: center;
+    text-decoration: none ;
+
+}
+#contactme i{
+    font-size: 30px;   
+    color: bisque; 
+    cursor: pointer;
+    border-radius: 25%;
+
+}
+#contactme i:hover
+{
+    background-color: aliceblue;
+    box-shadow: 0 0 5px aliceblue,0 0 25px aliceblue,0 0 50px aliceblue,0 0 100px aliceblue;
+}
+
+@keyframes sliderea
+{
+    0%{
+        transform: translatey(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatey(0px);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes slidelis
+{
+    0%{
+        transform: translatex(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatex(0px);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes slidein
+{
+    0%{
+        transform: translatey(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatey(0px);
+        opacity: 1;
+    }
+    
+}
+@keyframes slidetext
+{
+    0%{
+        transform: translatey(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatey(0px);
+        opacity: 1;
+    }
+    
+}
+@keyframes slidebox
+{
+    0%{
+        transform: translatey(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatey(0px);
+        opacity: 1;
+    }
+    
+}
+
+footer{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: cornflowerblue;
+    margin-top: 70px;
+ 
+}
+h6{
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 90px;
+    animation: slideh 1s ease forwards;
+
+
+}
+footer i{
+    
+    display: flex;
+    font-size: 25px;
+    margin-top: 40px ;
+    
+    
+
+}
+@keyframes slideh
+{
+    0%{
+        transform: translatey(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatey(0px);
+        opacity: 1;
+    }
+    
+}
